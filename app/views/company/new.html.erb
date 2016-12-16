@@ -1,0 +1,30 @@
+<h1>Create your company profile</h1>
+<%= form_for :company, url: company_path  do |f| %>
+	<p>
+	    <%= f.label :companyname %><br>
+	    <%= f.text_field :name %>
+	</p>
+	<p>
+	    <%= f.label :username %><br>
+	    <%= f.text_field :username %>
+	</p>
+	<p>
+	    <%= f.label :represenativename %><br>
+	    <%= f.text_field :repname %>
+	</p>
+	<p>
+	    <%= f.label :emailaddress %><br>
+	    <%= f.text_field :email %>
+	</p>
+	<p>
+	    <%= f.label :phonenumber %><br>
+	    <%= f.text_field :number %>
+	</p>
+	<p>
+	    <%= f.label :password %><br>
+	    <%= f.text_field :password %>
+	</p>
+	<p>
+	    <%= f.submit %>
+	</p>
+<% end %>
